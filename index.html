@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1RM Calulator</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <form name="RMForm">
+    <form name="RMForm" class="content">
         <div>
-            <label for="Weight">Enter Weight (in kg)</label>
+            <label for="Weight">Enter Weight (kg)</label>
             <input type="number" name="EnterWeight" id="Weight" required>
         </div>
         <div>
@@ -17,15 +18,13 @@
             <input type ="number" name="NumberofReps" id="Reps" required>
         </div>
         <div>
-            <button type="reset">Clear</button>
-            <button type="button" value="CalculateRM" onClick="calculateRM()">Calculate One Rep Max</button>
+            <button type="button" value="CalculateRM" onClick="calculateRM()" class="button">Calculate One Rep Max</button>
         </div>
         <div>
-            Your One Rep Max: <input type="number" name="RM"><br />
+            Your One Rep Max: <input type="number" name="RM" class="number"><br />
         </div>
     </form>
     <script src="./app.js"></script>
-
 </body>
 </html>
 
